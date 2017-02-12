@@ -1,0 +1,56 @@
+<div class="row">
+  <h2>Détails de la campagne</h2>
+</div>
+
+
+<table class="table table-bordered table-bordered">
+  <tr>
+    <td>Référence</td>
+    <td>{{campaign.reference}}</td>
+  </tr>
+
+  <tr>
+    <td>Nombre de destinataires</td>
+    <td>{{campaign.prospectQuantity}}</td>
+  </tr>
+
+  <tr>
+    <td>Nom de la campagne</td>
+    <td>{{campaign.name}}</td>
+  </tr>
+
+  <tr>
+    <td>Contenu du SMS</td>
+    <td>{{campaign.smsContent}}</td>
+  </tr>
+
+  <tr>
+    <td>Nom du client:</td>
+    <td>{{campaign.customerName}}</td>
+  </tr>
+
+  <tr>
+    <td>Statut de la campagne</td>
+    <td>{{campaign.state}}</td>
+  </tr>
+
+  <tr>
+    <td>Date de création:</td>
+    <td>{{campaign.creationDate}}</td>
+  </tr>
+  <tr>
+    <td>Date de dernière modification:</td>
+    <td></td>
+  </tr>
+
+</table>
+
+  <div class="form-group">
+    <button class="btn btn-primary" ng-click="send()">Envoyer la campagne</button>
+    <button class="btn btn-default" ng-click="edit()">Modifier la campagne</button>
+    <button class="btn btn-danger"  ng-click="delete()">Supprimer la campagne</button>
+  </div>
+
+</form>
+
+

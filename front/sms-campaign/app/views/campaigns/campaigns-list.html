@@ -1,0 +1,26 @@
+<h2> Campagnes SMS</h2>
+<table class="table table-bordered table-bordered" ng-hide="emptyUsers">
+  <th>Référence</th>
+  <th>Nom de la campagne</th>
+  <th>Nombre de destinataires</th>
+  <th>Créateur de la campagne</th>
+  <th>Date de création</th>
+  <th>Statut</th>
+
+  <tr ng-repeat="c in campaigns">
+    <td><a ui-sref="campaigns.details({campaign: c})">{{c.reference}}</a></td>
+    <td>{{c.name}}</td>
+    <td>{{c.prospectQuantity}}</td>
+    <td>{{c.customerName}}</td>
+    <td>{{c.creationDate}}</td>
+    <td>{{c.state}}</td>
+  </tr>
+</table>
+
+<div class="col-lg-3" ng-show="empty">
+  </br>
+  </br>
+  <div class="alert alert-danger">
+    <strong>Désolé, </strong> Aucune campagne trouvée
+  </div>
+</div>

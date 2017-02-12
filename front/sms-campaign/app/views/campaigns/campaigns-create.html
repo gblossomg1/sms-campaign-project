@@ -1,0 +1,51 @@
+<div>
+  <section class="row">
+    <div id="section-title" class="col-md-12"><h3>Campagnes SMS</h3></div>
+    <div id="section-subtitle" class="col-md-12"><h5>Création de campagne</h5></div>
+  </section>
+
+
+  <div class="row">
+    <div class="col-md-7">
+      <form class="form-horizontal">
+
+        <label for="name" class="control-label col-md-2"> Nom de la campagne</label>
+        <div class="form-group col-md-10">
+          <input class="form-control" type="text" id="name" ng-model="name"
+                 placeholder="Le nom permettant d'identifier la campagne"/>
+        </div>
+
+        <label for="content" class="control-label col-lg-2">Contenu du sms</label>
+        <div class="form-group col-md-10">
+        <textarea class="form-control col-md-10" id="content" ng-model="smsContent"
+                  placeholder="Le message que recevront les prospects" style="text-align:left;"></textarea>
+        </div>
+
+        <label for="prospectQuantity" class="control-label col-md-2">Nombre de destinataires</label>
+        <div class="form-group col-md-10">
+          <input class="form-control" type="number" id="prospectQuantity" ng-model="prospectQuantity"
+                 placeholder="Le nombre de prospects auxquels sera envoyé la campagne"/>
+        </div>
+
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-10">
+            <button type="submit" class="btn btn-primary" ng-click="createCampaign()">Créer la campagne</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="col-md-5">
+     <!-- <h4>Aperçu du SMS</h4> -->
+      <div class="sms-summary">
+        <h3>{{customerName}}</h3>
+        <h4>{{name}}</h4>
+        {{smsContent}}
+        <div class="stop-sms">
+          <h5>STOP SMS au XXXX</h5>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

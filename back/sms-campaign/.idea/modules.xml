@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/external-data/external-data-services/src/it/it.iml" filepath="$PROJECT_DIR$/external-data/external-data-services/src/it/it.iml" />
+      <module fileurl="file://$PROJECT_DIR$/campaign/campaign-services/src/it/it1.iml" filepath="$PROJECT_DIR$/campaign/campaign-services/src/it/it1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prospect/prospect-services/src/it/it2.iml" filepath="$PROJECT_DIR$/prospect/prospect-services/src/it/it2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/third-parties/i-send-pro/src/it/it3.iml" filepath="$PROJECT_DIR$/third-parties/i-send-pro/src/it/it3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/external-data/external-data-process/src/main/main.iml" filepath="$PROJECT_DIR$/external-data/external-data-process/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-framework/common-framework-api/src/main/main1.iml" filepath="$PROJECT_DIR$/common-framework/common-framework-api/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/external-data/external-data-api/src/main/main10.iml" filepath="$PROJECT_DIR$/external-data/external-data-api/src/main/main10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prospect/prospect-api/src/main/main11.iml" filepath="$PROJECT_DIR$/prospect/prospect-api/src/main/main11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sms-core/sms-core-services/src/main/main12.iml" filepath="$PROJECT_DIR$/sms-core/sms-core-services/src/main/main12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/campaign/campaign-api/src/main/main13.iml" filepath="$PROJECT_DIR$/campaign/campaign-api/src/main/main13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/campaign/campaign-services/src/main/main2.iml" filepath="$PROJECT_DIR$/campaign/campaign-services/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prospect/prospect-services/src/main/main3.iml" filepath="$PROJECT_DIR$/prospect/prospect-services/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sms-core/sms-core-api/src/main/main4.iml" filepath="$PROJECT_DIR$/sms-core/sms-core-api/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-framework/common-framework-core/src/main/main5.iml" filepath="$PROJECT_DIR$/common-framework/common-framework-core/src/main/main5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/external-data/external-data-services/src/main/main6.iml" filepath="$PROJECT_DIR$/external-data/external-data-services/src/main/main6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/campaign/campaign-process/src/main/main7.iml" filepath="$PROJECT_DIR$/campaign/campaign-process/src/main/main7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prospect/prospect-process/src/main/main8.iml" filepath="$PROJECT_DIR$/prospect/prospect-process/src/main/main8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/third-parties/i-send-pro/src/main/main9.iml" filepath="$PROJECT_DIR$/third-parties/i-send-pro/src/main/main9.iml" />
+    </modules>
+  </component>
+</project>

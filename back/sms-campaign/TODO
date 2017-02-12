@@ -1,0 +1,22 @@
+- Mettre les exceptions issues du third party et laisser java remonter les exceptions jusqu'à la couche controller
+
+-- Corriger le probleme de mapping de la reponse dans le thirdparty et envoyer une exception depuis ce niveau
+
+-- (en cours) Add business rules while creating, editing, archiving camapaign
+
+-- Create abstract classes like FunctionalException and TechnicalException that will inherit from CustomException in order to fix ExceptionType attribute
+
+-- Se renseigner sur les logs en entrée et sortie des différentes méthodes (voir AOP.. A faire progressivement..)
+
+-- Une campagne doit peut etre pouvoir être envoyée plusieurs fois... Ou tout simplement pouvoir dupliquer la campagne
+
+
+xxx DONE- Add SMSCampaignTechnicalException ???
+
+xxx DONE- Créer un module transverse ( framework-services ?) pour definir les objets generiques tels que FunctionalException, TechnicalException, CustomError ...
+
+xxx DONE - Bien definir les classes Exceptions à utiliser en fonction du contexte (Arbitrer SMSCoreException et SMSCampaignException..)
+
+xxx DONE - Ajouter APIResponse dans framework-api
+
+ -

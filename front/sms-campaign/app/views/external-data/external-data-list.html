@@ -1,0 +1,24 @@
+<h2> Campagnes SMS</h2>
+<table class="table table-bordered table-bordered" ng-hide="emptyUsers">
+  <th>Référence</th>
+  <th>Format</th>
+  <th>Date d'import</th>
+  <th>Entreprise</th>
+  <th>Type d'entité</th>
+
+  <tr ng-repeat="data in externalDataList">
+    <td><a ui-sref="external-data.imported({sourceId: data.id})">{{data.id}}</a></td>
+    <td>{{data.format}}</td>
+    <td>{{data.importDate}}</td>
+    <td>{{data.businessEntity}}</td>
+    <td>{{data.dataModel}}</td>
+  </tr>
+</table>
+
+<div class="col-lg-3" ng-show="empty">
+  </br>
+  </br>
+  <div class="alert alert-danger">
+    <strong>Désolé, </strong> Aucune donnée externe importée trouvée
+  </div>
+</div>

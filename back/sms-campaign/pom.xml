@@ -1,0 +1,316 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.concrete-it-solutions</groupId>
+	<artifactId>sms-campaign</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<modules>
+		<module>sms-core</module>
+		<module>campaign</module>
+		<module>common-framework</module>
+	<!--	<module>user-module</module> -->
+		<module>prospect</module>
+		<module>sms-campaign-container</module>
+		<module>third-parties</module>
+		<module>external-data</module>
+	</modules>
+
+	<!--common dependencies -->
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aop</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>4.3.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.5.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.0.7.Final</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-jpa</artifactId>
+			<version>1.10.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>HikariCP</artifactId>
+			<version>2.2.5</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.39</version>
+		</dependency>
+
+
+		<!--	<dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-autoconfigure</artifactId>
+                <version>1.2.8.RELEASE</version>
+            </dependency> -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot</artifactId>
+			<version>1.4.2.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.3.4.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxrs</artifactId>
+			<version>3.1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.assertj</groupId>
+			<artifactId>assertj-core</artifactId>
+			<scope>test</scope>
+			<version>3.5.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.3.2.Final</version>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- COMMON FRAMEWORK -->
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>common-framework</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>common-framework-api</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>common-framework-core</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- USER MODULE -->
+            <!--
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>user-module</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>user-module-api</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>user-module-process</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>user-module-services</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+            -->
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>framework-api</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- CAMPAIGN-->
+
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign-api</artifactId>
+				<type>war</type>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign-process</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign-services</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!--SMS CORE -->
+
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>sms-core</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>sms-core-api</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+				<type>war</type>
+			</dependency>
+
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>sms-core-process</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>sms-core-services</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- SMS CAMPAIGN -->
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign-api</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign-process</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>campaign-services</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- PROSPECT -->
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>prospect</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>prospect-process</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>prospect-services</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>prospect-api</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- EXTERNAL DATA -->
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>external-data</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>external-data-api</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>external-data-process</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>external-data-services</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- THIRD PARTIES -->
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>third-parties</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>i-send-pro</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+
+			<!-- CONTAINER -->
+			<dependency>
+				<groupId>com.concrete-it-solutions</groupId>
+				<artifactId>sms-campaign-container</artifactId>
+				<version>1.0.0-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<finalName>sms-campaign</finalName>
+	</build>
+</project>

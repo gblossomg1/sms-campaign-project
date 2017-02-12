@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.concrete-it-solutions</groupId>
+		<artifactId>campaign</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>campaign-api</artifactId>
+	<packaging>war</packaging>
+	<dependencies>
+		<dependency>
+			<groupId>com.concrete-it-solutions</groupId>
+			<artifactId>common-framework-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.concrete-it-solutions</groupId>
+			<artifactId>common-framework-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.concrete-it-solutions</groupId>
+			<artifactId>i-send-pro</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.concrete-it-solutions</groupId>
+			<artifactId>campaign-process</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

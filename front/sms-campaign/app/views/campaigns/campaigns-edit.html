@@ -1,0 +1,31 @@
+<div class="row">
+  <h2>Modifier une campagne</h2>
+</div>
+
+<form class="form-horizontal">
+
+  <form class="form-horizontal">
+
+    <label for="name" class="control-label col-lg-2"> Nom de la campagne</label>
+    <div class="form-group col-lg-10">
+      <input class="form-control" type="text" id="name" ng-model="name" placeholder="Le nom permettant d'identifier la campagne"/>
+    </div>
+
+    <label for="content" class="control-label col-lg-2">Contenu du sms</label>
+    <div class="form-group col-lg-10">
+      <textarea  class="form-control col-lg-10" id="content" ng-model="smsContent"  placeholder="Le message que recevront les prospects" style="text-align:left;"></textarea>
+    </div>
+
+    <label for="prospectQuantity" class="control-label col-lg-2">Nombre de destinataires</label>
+    <div class="form-group col-lg-10">
+      <input class="form-control" type="number" id="prospectQuantity" ng-model="prospectQuantity" placeholder="Le nombre de prospects auxquels sera envoyé la campagne"/>
+    </div>
+
+    <div class="form-group">
+      <div class="col-lg-offset-2 col-lg-10">
+        <button type="submit" class="btn btn-primary" ng-click="applyChanges()">Appliquer les modifications</button>
+      </div>
+    </div>
+  </form>
+
+</form>
